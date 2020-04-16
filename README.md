@@ -10,6 +10,9 @@ pip install websocket-client
 
 2) Move `network.py` to folder with project
 
+## Example
+You can find a usage example in **example.py** file
+
 ## Usage
 ### Import Network class
 
