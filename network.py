@@ -20,7 +20,7 @@ class Network(object):
                 receive_callback(False)
 
         self._websocket = websocket.WebSocketApp(
-            "ws://45.15.253.128:8090/clients/signal",
+            "ws://45.15.253.128:8090/devices/signal",
             on_message=_on_message,
             on_error=self._on_error,
             on_close=self._on_close,
