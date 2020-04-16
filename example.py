@@ -4,7 +4,10 @@ from network import Network
 
 
 def callback(is_signal_on):
-    print("Received: {}".format(is_signal_on))
+    if is_signal_on:
+        print("Enable signal")
+    else:
+        print("Disable signal")
 
 
 if __name__ == '__main__':

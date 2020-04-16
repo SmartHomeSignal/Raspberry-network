@@ -14,7 +14,10 @@ class Network(object):
 
         def _on_message(ws, message):
             print("[Network] received: {}".format(message))
-            receive_callback(message)
+            if message == 'true':
+                receive_callback(True)
+            elif message == 'false':
+                receive_callback(False)
 
         self._websocket = websocket.WebSocketApp(
             "ws://45.15.253.128:8090/clients/signal",
